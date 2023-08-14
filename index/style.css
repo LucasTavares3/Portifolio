@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: #e00809;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chuvaContainer{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/img/rain.png') ;
+    animation: rain 0.2s linear infinite;
+}
+
+@keyframes rain{
+0%{
+    background-position: 0 0;
+}
+100%{
+    background-position: 10% 100%;
+}
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  height: 5em;
+  width: 50em;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+
+.botao_img {
+  height: 50px;
+  transition: 0.3s;
+}
+
+.botao_img:hover {
+  height: 65px;
+}
+
+.botao_img_selected {
+  height: 65px;
+}
+
+.logo {
+  height: 500px;
+}
